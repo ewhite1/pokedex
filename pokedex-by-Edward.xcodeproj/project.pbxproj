@@ -15,6 +15,7 @@
 		EC8D3B7E1CD1EC4E00B01391 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = EC8D3B7D1CD1EC4E00B01391 /* pokemon.csv */; };
 		EC8D3B811CD1ED4D00B01391 /* pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D3B801CD1ED4D00B01391 /* pokemon.swift */; };
 		EC8D3B841CD1FDB300B01391 /* pokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D3B831CD1FDB300B01391 /* pokeCell.swift */; };
+		EC8D3B861CD37B9F00B01391 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D3B851CD37B9F00B01391 /* csv.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EC8D3B7D1CD1EC4E00B01391 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		EC8D3B801CD1ED4D00B01391 /* pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pokemon.swift; sourceTree = "<group>"; };
 		EC8D3B831CD1FDB300B01391 /* pokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pokeCell.swift; sourceTree = "<group>"; };
+		EC8D3B851CD37B9F00B01391 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +62,12 @@
 		EC8D3B6A1CD1E80E00B01391 /* pokedex-by-Edward */ = {
 			isa = PBXGroup;
 			children = (
+				EC8D3B891CD37C7E00B01391 /* Controller */,
+				EC8D3B881CD37C6500B01391 /* Resources */,
+				EC8D3B871CD37C4A00B01391 /* Utils */,
 				EC8D3B821CD1FD8300B01391 /* view */,
 				EC8D3B7F1CD1ED3C00B01391 /* model */,
 				EC8D3B6B1CD1E80E00B01391 /* AppDelegate.swift */,
-				EC8D3B6D1CD1E80E00B01391 /* ViewController.swift */,
-				EC8D3B7D1CD1EC4E00B01391 /* pokemon.csv */,
 				EC8D3B6F1CD1E80E00B01391 /* Main.storyboard */,
 				EC8D3B721CD1E80E00B01391 /* Assets.xcassets */,
 				EC8D3B741CD1E80E00B01391 /* LaunchScreen.storyboard */,
@@ -87,6 +90,31 @@
 				EC8D3B831CD1FDB300B01391 /* pokeCell.swift */,
 			);
 			name = view;
+			sourceTree = "<group>";
+		};
+		EC8D3B871CD37C4A00B01391 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EC8D3B851CD37B9F00B01391 /* csv.swift */,
+			);
+			name = Utils;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EC8D3B881CD37C6500B01391 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC8D3B7D1CD1EC4E00B01391 /* pokemon.csv */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EC8D3B891CD37C7E00B01391 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC8D3B6D1CD1E80E00B01391 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +194,7 @@
 				EC8D3B811CD1ED4D00B01391 /* pokemon.swift in Sources */,
 				EC8D3B6E1CD1E80E00B01391 /* ViewController.swift in Sources */,
 				EC8D3B6C1CD1E80E00B01391 /* AppDelegate.swift in Sources */,
+				EC8D3B861CD37B9F00B01391 /* csv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
