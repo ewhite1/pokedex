@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Pokemon.ttf">
+            <string>PokemonSolidNormal</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -23,9 +28,39 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62L-Mw-5L6">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pokedex" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p1g-St-KRo">
+                                        <rect key="frame" x="249" y="8" width="113" height="39"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="113" id="UUb-yk-COQ"/>
+                                            <constraint firstAttribute="height" constant="39" id="xwq-2q-6yI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="28"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQz-2S-TOY">
+                                        <rect key="frame" x="561" y="17" width="31" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Grq-v8-sF4"/>
+                                            <constraint firstAttribute="width" constant="31" id="XHd-el-9Vd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="🎶">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="musicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R7N-qD-bmo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="WQz-2S-TOY" firstAttribute="top" secondItem="62L-Mw-5L6" secondAttribute="top" constant="17" id="OJW-Xh-Eaq"/>
+                                    <constraint firstAttribute="trailing" secondItem="WQz-2S-TOY" secondAttribute="trailing" constant="8" id="b06-EE-QxJ"/>
                                     <constraint firstAttribute="height" constant="55" id="kMR-S8-Atq"/>
+                                    <constraint firstItem="p1g-St-KRo" firstAttribute="centerX" secondItem="62L-Mw-5L6" secondAttribute="centerX" id="qyg-j5-DvR"/>
+                                    <constraint firstItem="p1g-St-KRo" firstAttribute="centerY" secondItem="62L-Mw-5L6" secondAttribute="centerY" id="vVB-GI-Rvi"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ghi-LD-eQs">

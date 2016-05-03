@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B6B9C731CD882B9002323FB /* Pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B6B9C721CD882B9002323FB /* Pokemon.ttf */; };
 		EC8D3B6C1CD1E80E00B01391 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D3B6B1CD1E80E00B01391 /* AppDelegate.swift */; };
 		EC8D3B6E1CD1E80E00B01391 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8D3B6D1CD1E80E00B01391 /* ViewController.swift */; };
 		EC8D3B711CD1E80E00B01391 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8D3B6F1CD1E80E00B01391 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B6B9C721CD882B9002323FB /* Pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pokemon.ttf; sourceTree = "<group>"; };
 		EC8D3B681CD1E80E00B01391 /* pokedex-by-Edward.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pokedex-by-Edward.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8D3B6B1CD1E80E00B01391 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC8D3B6D1CD1E80E00B01391 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		EC8D3B881CD37C6500B01391 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2B6B9C721CD882B9002323FB /* Pokemon.ttf */,
 				EC8D3B7D1CD1EC4E00B01391 /* pokemon.csv */,
 			);
 			name = Resources;
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC8D3B761CD1E80E00B01391 /* LaunchScreen.storyboard in Resources */,
+				2B6B9C731CD882B9002323FB /* Pokemon.ttf in Resources */,
 				EC8D3B731CD1E80E00B01391 /* Assets.xcassets in Resources */,
 				EC8D3B7E1CD1EC4E00B01391 /* pokemon.csv in Resources */,
 				EC8D3B711CD1E80E00B01391 /* Main.storyboard in Resources */,
@@ -346,6 +350,7 @@
 				EC8D3B7C1CD1E80E00B01391 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
