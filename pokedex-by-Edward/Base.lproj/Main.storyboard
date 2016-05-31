@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -113,7 +113,7 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="vBc-PY-WFP">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search for Pokemon!" translatesAutoresizingMaskIntoConstraints="NO" id="vBc-PY-WFP">
                                 <rect key="frame" x="0.0" y="55" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -138,11 +138,50 @@
                     </view>
                     <connections>
                         <outlet property="collection" destination="Ghi-LD-eQs" id="OO1-6W-WNr"/>
+                        <outlet property="searchBar" destination="vBc-PY-WFP" id="0Q4-tE-CSU"/>
+                        <segue destination="UvN-Xh-Fdg" kind="show" identifier="PokemonDetailVC" id="3oh-fp-elf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1239" y="762"/>
+            <point key="canvasLocation" x="653" y="-135"/>
+        </scene>
+        <!--Pokemon DetailVC-->
+        <scene sceneID="fap-ve-mjz">
+            <objects>
+                <viewController id="UvN-Xh-Fdg" customClass="PokemonDetailVC" customModule="pokedex_by_Edward" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k9b-dk-etO"/>
+                        <viewControllerLayoutGuide type="bottom" id="BIB-Id-AY0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IRJ-ir-Si5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xnj-qr-pM5">
+                                <rect key="frame" x="206" y="289" width="189" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="RTd-rb-Euo"/>
+                                    <constraint firstAttribute="width" constant="189" id="luN-Xa-uAG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xnj-qr-pM5" firstAttribute="centerY" secondItem="IRJ-ir-Si5" secondAttribute="centerY" id="8pb-Lg-Up6"/>
+                            <constraint firstItem="Xnj-qr-pM5" firstAttribute="centerX" secondItem="IRJ-ir-Si5" secondAttribute="centerX" id="qsY-fg-p9O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="namelbl" destination="Xnj-qr-pM5" id="bgH-0W-P1n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c4T-HB-aRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1631" y="-135"/>
         </scene>
     </scenes>
     <resources>
