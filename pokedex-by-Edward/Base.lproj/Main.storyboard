@@ -181,6 +181,9 @@
                                         <state key="normal" title="◀︎">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="backBtnPressed:" destination="UvN-Xh-Fdg" eventType="touchUpInside" id="dng-Dh-5P6"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -220,7 +223,7 @@
                                                 <rect key="frame" x="140" y="0.0" width="420" height="140"/>
                                                 <string key="text">They fly around on moonless nights and attack careless prey. Nothing can beat them in a battle in the dark. They fly around on moonless nights and attack careless prey. Nothing can beat them in a battle in the dark.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -372,7 +375,18 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="baseAttackLbl" destination="Leo-Lz-d8C" id="YWL-cR-Wcd"/>
+                        <outlet property="currentEvoImg" destination="6pa-Rb-E9v" id="N1L-oI-E4Q"/>
+                        <outlet property="defenseLbl" destination="4ec-HQ-FIg" id="FAt-Fk-qVF"/>
+                        <outlet property="desciptionLbl" destination="Htf-UE-VkD" id="nby-wP-FW5"/>
+                        <outlet property="heightLbl" destination="jin-M1-FAd" id="QU6-Mh-tVv"/>
+                        <outlet property="mainImg" destination="hLw-m2-FzO" id="yg3-tx-jTc"/>
                         <outlet property="namelbl" destination="Xnj-qr-pM5" id="bgH-0W-P1n"/>
+                        <outlet property="nextEvoImg" destination="hag-mU-pWR" id="cvh-0c-7qJ"/>
+                        <outlet property="nextEvoLbl" destination="5Nh-wM-y9g" id="V23-8g-qhL"/>
+                        <outlet property="pokedexLbl" destination="rj4-kV-57K" id="CmL-1H-eSf"/>
+                        <outlet property="typeLbl" destination="H3g-hJ-A7M" id="clY-72-hDk"/>
+                        <outlet property="weightLbl" destination="YPv-S9-RwY" id="4tO-V6-skl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c4T-HB-aRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
