@@ -110,10 +110,11 @@ class Pokemon {
                 if let defense = dict["defense"] as? Int {
                     self._defense = "\(defense)"
                 }
-                print(self._weight)
-                print(self._height)
-                print(self._attack)
-                print(self._defense)
+                // commented out, but left in for debug purposes
+               // print(self._weight)
+               // print(self._height)
+               // print(self._attack)
+               //print(self._defense)
                 
                 if let types = dict["types"] as? [Dictionary<String, String>] where types.count > 0{
                     if let name = types[0]["name"] {
@@ -129,7 +130,8 @@ class Pokemon {
                 } else {
                     self._type = ""
                 }
-                print(self._type)
+                // commented out for debug purposes
+                //print(self._type)
                 
                 if let descArr = dict["descriptions"] as? [Dictionary<String, String>] where descArr.count > 0{
                     if let url = descArr[0] ["resource_uri"] {
@@ -140,7 +142,8 @@ class Pokemon {
                             if let descDict = desResult.value as? Dictionary<String, AnyObject> {
                                 if let description = descDict["description"] as? String {
                                     self._description = description
-                                    print(self._description)
+                                    //commented out but left in for debug purposes.
+                                    //  print(self._description)
                                 }
                             }
                             completed()
@@ -163,9 +166,11 @@ class Pokemon {
                                 if let lvl = evolutions[0]["level"] as? Int {
                                     self._nextEvolutionLvl = "\(lvl)"
                                 }
+                                /* Commented out, but left in for debug purposes.
                                 print(self._nextEvolutionId)
                                 print(self._nextEvolutionTxt)
                                 print(self._nextEvolutionLvl)
+                                */
                             }
                         }
                     }
